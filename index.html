@@ -5,63 +5,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
+  <title>Het's Portfolio</title>
+  
+  <link rel="shortcut icon" href="./fol.png" type="image/png" sizes="32x32">
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-<!-- Add this before your custom CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.css">
 
-<!-- Add this before your custom JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-
-<!-- Add this in the <head> section, after your other CSS links -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="./assets/css/About.css">
+<link rel="stylesheet" href="./assets/css/portfolio.css">
+<link rel="stylesheet" href="./assets/css/contact.css">
 
 </head>
 <body>
-  <!--
-    - #MAIN
-  -->
 
   <main>
 
-    <!--
-      - #SIDEBAR
-    -->
-
     <aside class="sidebar" data-sidebar>
-      <div class="mac-buttons">
-        <div class="mac-btn close"></div>
-        <div class="mac-btn minimize"></div>
-        <div class="mac-btn maximize"></div>
-      </div>
-
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Profile placeholder" width="80">
-          <!-- <img src="./assets/images/p.jpg" alt="Het Patel" width="80"> -->
+        
+          <img src="./hetp.jpg" alt="Het Patel" width="80">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Het Patel">Het Patel</h1>
 
-          <p class="title">Software Developer @ TSI</p>
+          <p class="title">Fullstack Software Developer @ TSI</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -139,42 +114,34 @@
         <div class="separator"></div>
 
         <ul class="social-list">
-
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://www.instagram.com/hetp04/?locale=de&hl=am-et" class="social-link" target="_blank">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://github.com/paremeter373" class="social-link" target="_blank">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://www.researchgate.net/profile/Hetq-Patel" class="social-link" target="_blank">
               <i class="fab fa-researchgate"></i>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://www.linkedin.com/in/hetp04/" class="social-link" target="_blank">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
-
-         
-
         </ul>
 
       </div>
 
     </aside>
-
-    <!--
-      - #main-content
-    -->
 
     <div class="main-content">
       <div class="os-toolbar">
@@ -192,28 +159,16 @@
           </div>
         </div>
         <div class="toolbar-right">
-          <div class="toolbar-search">
-            <ion-icon name="search-outline"></ion-icon>
-            <input type="text" placeholder="Search...">
-          </div>
-          <ion-icon name="grid-outline"></ion-icon>
         </div>
       </div>
 
-      <!--
-        - #NAVBAR
-      -->
-
+    
       <nav class="navbar">
 
         <ul class="navbar-list">
 
           <li class="navbar-item">
             <a href="#home" class="navbar-link active" data-nav-link>Home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#about" class="navbar-link active" data-nav-link>About</a>
           </li>
 
           <li class="navbar-item">
@@ -224,7 +179,6 @@
             <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
           </li>
 
-
           <li class="navbar-item">
             <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
           </li>
@@ -232,11 +186,6 @@
         </ul>
 
       </nav>
-
-      <!--
-        - #ABOUT
-      -->
-
 
       <article class="home" data-page="home" id="home">
         <div class="hero">
@@ -261,79 +210,557 @@
 
         <div class="stats-container">
           <div class="stat-box">
-            <div class="stat-icon">
-              <ion-icon name="document-text"></ion-icon>
+            <div class="stat-box-header">
+              <div class="stat-content">
+                <div class="stat-icon">
+                  <ion-icon name="document-text"></ion-icon>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-number">2</span>
+                  <span class="stat-label">Publications</span>
+                </div>
+              </div>
             </div>
-            <div class="stat-info">
-              <span class="stat-number">2</span>
-              <span class="stat-label">Publications</span>
+            <div class="dropdown-content">
+              <div class="pub-item">
+                <h4>Evaluating the Efficacy of Large Language Models in Identifying Phishing Attempts</h4>
+                <p>Presented at HSI24 International Conference</p>
+              </div>
+              <div class="pub-item">
+                <h4>The Evolution of Speech Synthesis</h4>
+                <p>Upcoming conference presentation</p>
+                <p>at ACM CUI 2025</p>
+              </div>
             </div>
           </div>
 
           <div class="stat-box">
-            <div class="stat-icon">
-              <ion-icon name="layers"></ion-icon>
+            <div class="stat-box-header">
+              <div class="stat-content">
+                <div class="stat-icon">
+                  <ion-icon name="layers"></ion-icon>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-label">Full Stack Developer</span>
+                </div>
+              </div>
             </div>
-            <div class="stat-info">
-              <span class="stat-label">Full Stack Developer</span>
+            <div class="dropdown-content">
+              <div class="tech-stack">
+                <div class="tech-item">
+                  <i class="fab fa-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-react"></i>
+                  <span>React</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-js"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-node-js"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fas fa-database"></i>
+                  <span>SQLite</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fas fa-elephant"></i>
+                  <span>PostgreSQL</span>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="stat-box">
-            <div class="stat-icon">
-              <ion-icon name="trophy"></ion-icon>
+            <div class="stat-box-header">
+              <div class="stat-content">
+                <div class="stat-icon">
+                  <ion-icon name="trophy"></ion-icon>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-label">Duck Hacks Winner</span>
+                </div>
+              </div>
             </div>
-            <div class="stat-info">
-              <span class="stat-label">Duck Hacks Winner</span>
+            <div class="dropdown-content">
+              <div class="pub-item">
+                <h4>TrackStack</h4>
+                <p>A dynamic expense tracking platform that helps users visualize and manage their financial journey through interactive charts and analytics.</p>
+                <p>Won Best Overall Project at Duck Hacks 2024</p>
+                <p><a href="https://devpost.com/software/trackstack" target="_blank" style="color: var(--orange-yellow-crayola);">
+                  <i class="fas fa-external-link-alt"></i> View on Devpost
+                </a></p>
+              </div>
+              <div class="pub-item">
+                <h4>MemeStudy: AI-Powered Learning Assistant</h4>
+                <p>Interactive study platform that transforms traditional flashcards into fun, engaging meme-based learning materials using AI</p>
+                <p>For Ignition Hacks 2024</p>
+                <p><a href="https://devpost.com/software/memeify-3qbpwa" target="_blank" style="color: var(--orange-yellow-crayola);">
+                  <i class="fas fa-external-link-alt"></i> View on Devpost
+                </a></p>
+              </div>
             </div>
           </div>
         </div>
       </article>
-
-      <article class="about" data-page="about" id="about">
-  
-      
-      </article>
-
-      <!--
-        - #RESUME
-      -->
-
+ 
       <article class="resume" data-page="resume" id="resume">
-        <!-- Resume content goes here -->
-      </article>
+        <div class="left-column">
+        <section class="timeline education-box">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
 
-      <!--
-        - #PORTFOLIO
-      -->
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Western University</h4>
+              <span>Hons. Specialization in Computer Science</span>
+              <div class="date-badge">Sept 2022 - May 2026</div>
+              <div class="achievement-badges">
+                <div class="badge">GPA: 3.8/4.0</div>
+                <div class="badge">Dean's Award</div>
+              </div>
+            </li>
 
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Middlefield Collegiate Institute</h4>
+              <span>Ontario Secondary School Diploma</span>
+              <div class="date-badge">Sept 2018 - June 2022</div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline skills-box">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Skills</h3>
+          </div>
+          
+          <div class="skills-category">
+            <h4 class="category-title">Languages</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <img src="/python.png" alt="Python" class="skill-icon">
+                <span class="skill-name">Python</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/java.png" alt="Java" class="skill-icon">
+                <span class="skill-name">Java</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/js.png" alt="JavaScript" class="skill-icon">
+                <span class="skill-name">JavaScript</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/html.png" alt="HTML" class="skill-icon">
+                <span class="skill-name">HTML</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/css-3.png" alt="CSS" class="skill-icon">
+                <span class="skill-name">CSS</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/c.png" alt="C" class="skill-icon">
+                <span class="skill-name">C</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/c-.png" alt="C++" class="skill-icon">
+                <span class="skill-name">C++</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="category-title">Technologies & Tools</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <img src="./atom.png" alt="React" class="skill-icon">
+                <span class="skill-name">React</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/sqlite.png" alt="SQLite" class="skill-icon">
+                <span class="skill-name">SQLite</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="./elephant.png" alt="PostgreSQL" class="skill-icon">
+                <span class="skill-name">PostgreSQL</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="node.png" alt="Node.js" class="skill-icon">
+                <span class="skill-name">Node.js</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/git.png" alt="Git" class="skill-icon">
+                <span class="skill-name">Git</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/bash.png" alt="Bash" class="skill-icon">
+                <span class="skill-name">Bash</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/figma.png" alt="Figma" class="skill-icon">
+                <span class="skill-name">Figma</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/jira.png" alt="Jira" class="skill-icon">
+                <span class="skill-name">Jira</span>
+              </div>
+              
+              <div class="skill-item">
+                <img src="/scrum.png" alt="Scrum" class="skill-icon">
+                <span class="skill-name">Scrum</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/agile.png" alt="Agile" class="skill-icon">
+                <span class="skill-name">Agile</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/sdlc.png" alt="Software Development Cycle" class="skill-icon">
+                <span class="skill-name">SDLC</span>
+              </div>
+
+              <div class="skill-item">
+                <img src="/uml.png" alt="UML" class="skill-icon">
+                <span class="skill-name">UML</span>
+              </div>
+
+            
+            </div>
+          </div>
+        </section>
+
+    </div>
+	<div class="right-column">
+    
+        <section class="timeline work-box">
+          <div class="work-title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="work-timeline-list">
+            <li class="work-timeline-item">
+              <div class="work-header">
+                <h4 class="h4 work-item-title">Software Developer @ TSI</h4>
+                <span>Toronto, ON</span>
+                <div class="work-meta">
+                  <div class="work-date-badge">October 2024 - Present</div>
+                  <button class="toggle-btn">▼</button>
+                </div>
+              </div>
+              <div class="work-details hidden">
+                <ul class="work-points">
+                  <li>Developing a certification-based learning platform that enables users to complete courses, earn certifications, and manage their skills through an intuitive interface</li>
+                  <li>Aided in backend development by setting up server.js, authentication, Postgres database, and API endpoints, along with implementing features to manage certifications and skills.</li>
+                  <li>Designed and developed frontend components, including responsive login/signup pages, dynamic profile displays, and intuitive navigation for an enhanced user experience.</li>
+                </ul>
+              </div>
+            </li> 
+
+            <li class="work-timeline-item">
+              <div class="work-header">
+                <h4 class="h4 work-item-title">LLM's Research Assistant</h4>
+                <div class="work-location">
+                  <span>Western University</span>
+                  <span class="work-location-sub">HCCG (Human Centered Computing Group)</span>
+                </div>
+                <div class="work-meta">
+                  <div class="work-date-badge">May 2024 - Present</div>
+                  <button class="toggle-btn">▼</button>
+                </div>
+              </div>
+              <div class="work-details hidden">
+                <ul class="work-points">
+                  <li>Developed an annotation system to facilitate advanced natural language processing tasks, including text classification, sentiment analysis, and entity recognition.
+                  </li>
+                  <li>Tested a fine-tuned LLM on domain-specific datasets to improve sentiment analysis performance.
+                  </li>
+                  <li>Enhanced the annotation tool by integrating capabilities for annotating text, audio, and video, enabling detailed analysis of multi-format interactions.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="work-timeline-item">
+              <div class="work-header">
+                <h4 class="h4 work-item-title">Undergraduate Research Assistant</h4>
+                <div class="work-location">
+                  <span>Western University</span>
+                  <span class="work-location-sub">HCCG (Human Centered Computing Group)</span>
+                </div>
+                <div class="work-meta">
+                  <div class="work-date-badge">February 2024 - April 2024</div>
+                  <button class="toggle-btn">▼</button>
+                </div>
+              </div>
+              <div class="work-details hidden">
+                <ul class="work-points">
+                  <li>Authored an academic paper focused on leveraging LLM's to identify and mitigate phishing email threats; accepted for presentation at the HSI 24 international conference.</li>
+                  <li>Enhanced data interpretability through statistical analysis and data visualization techniques, including linear regression and k-means clustering.</li>
+                  <li>Analyzed performance metrics like mean, standard deviation, and percentile distributions for various AI models to evaluate their effectiveness in detecting phishing emails</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+      
+      <section class="timeline new-box">
+        <div class="new-title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="document-text-outline"></ion-icon>
+          </div>
+          <h3 class="h3">Publications</h3>
+        </div>
+
+        <div class="publication-item">
+          <h4 class="publication-title">Evaluating the Efficacy of Large Language Models in Identifying Phishing Attempts</h4>
+          <p class="publication-venue">HSI24 International Conference
+            <a href="https://www.researchgate.net/profile/Umair-Rehman-4/publication/383008151_Evaluating_the_Efficacy_of_Large_Language_Models_in_Identifying_Phishing_Attempts/links/66d7aa72fa5e11512c736e81/Evaluating-the-Efficacy-of-Large-Language-Models-in-Identifying-Phishing-Attempts.pdf" 
+               target="_blank" 
+               class="publication-link"
+               title="View Publication">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </p>
+        </div>
+
+        <div class="publication-item">
+          <h4 class="publication-title">The Evolution of Speech Synthesis</h4>
+          <p class="publication-venue">ACM CUI 2025 (upcoming conference presentation)</p>
+        </div>
+      </section>
+	  </article>
+     
       <article class="portfolio" data-page="portfolio" id="portfolio">
-        <!-- Portfolio content goes here -->
+
+
+        <div class="portfolio-grid">
+          <div class="project-card">
+            <div class="project-preview development-preview">
+              <ion-icon name="construct-outline"></ion-icon>
+              <span class="development-text">In Development</span>
+            </div>
+
+            <h4 class="project-title">Financial Expense Tracker</h4>
+
+            <div class="project-tags">
+              <span class="project-tag">
+                <ion-icon name="logo-react"></ion-icon>
+                React
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-nodejs"></ion-icon>
+                Node.js
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-javascript"></ion-icon>
+                JS
+              </span>
+            </div>
+
+            <p class="project-description">
+              A dynamic web application that enables users to track their daily expenses and visualize spending patterns through interactive charts, helping users make informed financial decisions.
+            </p>
+
+            <div class="project-date">
+              Dec 2023 - Present
+              <span class="development-badge">In Development</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/paremeter373/Expense-Tracker-" class="project-link" title="View Code">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+
+
+          <div class="project-card">
+            <div class="project-preview">
+              <img src="./meme2.png" alt="MemeStudy AI Learning Assistant Preview">
+            </div>
+
+            <h4 class="project-title">MemeStudy: AI Learning Assistant</h4>
+
+            <div class="project-tags">
+              <span class="project-tag">
+                <ion-icon name="logo-react"></ion-icon>
+                React
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-html5"></ion-icon>
+                HTML/CSS
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-python"></ion-icon>
+                Python
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                Flask
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                SQLite
+              </span>
+              <span class="project-tag">
+                <ion-icon name="cloud-outline"></ion-icon>
+                GroqAPI
+              </span>
+            </div>
+
+            <p class="project-description">
+              A learning platform that transforms traditional studying into an engaging experience by generating relevant memes for user-created flashcards and questions, making education both fun and memorable.
+            </p>
+
+            <div class="project-date">July 2024 - July 2024</div>
+
+            <div class="project-links">
+              <a href="https://github.com/paremeter373/Memeify-Project" class="project-link" title="View Code">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+              <a href="https://www.youtube.com/watch?v=TcF87fI3IfA" class="project-link" title="Live Demo" target="_blank">
+                <ion-icon name="open-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-preview">
+              <img src="./anno3.png" alt="Annotation Tool Preview">
+            </div>
+
+            <h4 class="project-title">Annotation Tool</h4>
+
+            <div class="project-tags">
+              <span class="project-tag">
+                <ion-icon name="logo-html5"></ion-icon>
+                HTML
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-css3"></ion-icon>
+                CSS
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-firebase"></ion-icon>
+                Firebase
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                SQLite
+              </span>
+            </div>
+
+            <p class="project-description">
+              Developing a full-stack annotation tool to streamline data labeling and support training Large Language Models. This tool enables the extraction of critical information such as labels, codes, and key phrases directly from text, significantly reducing the time and effort required for manual annotation.
+            </p>
+
+            <div class="project-date">May 2024 - Present</div>
+
+            <div class="project-links">
+              <a href="https://github.com/paremeter373/LLM-Annotation-Tool-" class="project-link" title="View Code">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-preview">
+              <img src="./stu.png" alt="Certification Management System Preview">
+            </div>
+
+            <h4 class="project-title">Certification Management System</h4>
+
+            <div class="project-tags">
+              <span class="project-tag">
+                <ion-icon name="logo-react"></ion-icon>
+                React
+              </span>
+              <span class="project-tag">
+                <ion-icon name="logo-nodejs"></ion-icon>
+                Node.js
+              </span>
+              <span class="project-tag">
+                <ion-icon name="server-outline"></ion-icon>
+                MongoDB
+              </span>
+            </div>
+
+            <p class="project-description">
+              A comprehensive platform enabling users to complete courses, earn certifications, and manage their skills through an intuitive interface with authentication. Users will be able to track their progress and receive certifications upon completing specific courses. The platform will also offer personalized learning paths.
+            </p>
+
+            <div class="project-date">
+              October 2023 - Present
+              <span class="development-badge">In Development</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/Christopher4113/YOU" class="project-link" title="View Code">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
+          
+        </div>
+
       </article>
 
-      <!--
-        - #BLOG
-      -->
-
-      <!--
-        - #CONTACT
-      -->
+   
 
       <article class="contact" data-page="contact" id="contact">
-        <!-- Contact content goes here -->
+        <section class="contact-form">
+          <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form id="contact-form">
+            <input type="hidden" name="access_key" value="7e8fb128-9e5d-48ce-9b59-4921e1b6c7e2">
+            
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div class="input-wrapper">
+              <input type="text" name="name" class="form-input" placeholder="Your name" required>
+              <input type="email" name="email" class="form-input" placeholder="Your email" required>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your message" required></textarea>
+
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
       </article>
     </div>
 
   </main>
 
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
