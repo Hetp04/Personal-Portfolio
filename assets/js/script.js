@@ -1,3 +1,95 @@
+const initTerminal = () => {
+  const preloader = document.getElementById('preloader');
+  const terminalMenu = document.querySelector('.terminal-menu');
+  const terminalInput = document.querySelector('.terminal-input');
+  const closeButton = document.querySelector('.terminal-button.red');
+  
+  setTimeout(showMenu, 1300);
+  
+  closeButton.addEventListener('click', () => {
+    preloader.classList.add('fade-out');
+    setTimeout(() => {
+      preloader.style.display = 'none';
+      window.location.hash = '#home';
+    }, 300);
+  });
+  
+  terminalInput.addEventListener('keypress', handleCommand);
+  
+  terminalInput.addEventListener('blur', () => {
+    setTimeout(() => terminalInput.focus(), 10);
+  });
+  
+  function showMenu() {
+    terminalMenu.classList.remove('hidden');
+    setTimeout(() => {
+      terminalMenu.classList.add('show');
+      terminalInput.focus();
+    }, 100);
+  }
+  
+  function handleCommand(e) {
+    if (e.key !== 'Enter') return;
+    
+    const command = terminalInput.value.trim();
+    terminalInput.value = '';
+    
+    writeToTerminal(command, 'command');
+        processCommand(command);
+  }
+  
+  function processCommand(command) {
+    const actions = {
+      '1': () => goToSection('home'),
+      '2': () => goToSection('portfolio'),
+      '3': () => goToSection('resume'),
+      '4': () => goToSection('contact'),
+      
+    };
+    
+    const action = actions[command];
+    if (action) {
+      action();
+    } else {
+      writeToTerminal('Invalid option. Please select 1-4.', 'response');
+    }
+  }
+  
+  function goToSection(section) {
+    writeToTerminal(`Navigating to ${section}...`, 'response');
+    
+    let fadeDelay = setTimeout(fadeAndNavigate, 800);
+    
+    function fadeAndNavigate() {
+      preloader.classList.add('fade-out');
+      
+      setTimeout(() => {
+        preloader.style.display = 'none';
+        window.location.hash = '#' + section;
+      }, 300);
+    }
+  }
+  
+  function writeToTerminal(text, type) {
+    let newLine = document.createElement('p');
+    
+    if (type === 'command') {
+      newLine.className = 'terminal-line command dynamic';
+    } else {
+      newLine.className = 'terminal-line response dynamic';
+    }
+    
+    newLine.textContent = text;
+    
+    let inputArea = terminalInput.parentElement;
+    inputArea.parentElement.insertBefore(newLine, inputArea);
+    newLine.scrollIntoView();
+    terminalInput.focus();
+  }
+};
+
+document.addEventListener('DOMContentLoaded', initTerminal);
+
 document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.navbar-link');
   const articles = document.querySelectorAll('article');
