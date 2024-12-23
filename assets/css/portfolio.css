@@ -2,7 +2,6 @@
   padding: 30px;
 }
 
-/* Add grid layout for two columns */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -14,10 +13,25 @@
   padding: 15px;
   border-radius: 12px;
   border: 1px solid var(--jet);
-  /* Add position relative to help with absolute positioning of links */
   position: relative;
-  /* Reduced min-height to match smaller image size */
   min-height: 400px;
+  font-family: 'Consolas', monospace;
+  letter-spacing: 0.5px;
+  padding-bottom: 60px;
+  transition: all 0.3s ease;
+  background: hsla(240, 1%, 17%, 0.75);
+}
+
+.project-card:hover {
+  border-color: var(--orange-yellow-crayola);
+  box-shadow: 
+    0 0 25px rgba(132, 190, 199, 0.1),
+    0 0 45px rgba(132, 190, 199, 0.1);
+  transform: translateY(-5px);
+}
+
+.project-card:hover .project-title {
+  color: var(--orange-yellow-crayola);
 }
 
 .project-preview {
@@ -28,7 +42,7 @@
 
 .project-preview img {
   width: 100%;
-  height: 300px; /* Reduced from 400px to 250px */
+  height: 300px; 
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -40,10 +54,9 @@
   font-weight: 500;
   margin-bottom: 10px;
   margin-top: 15px;
-}
-
-.project-title:hover {
-  color: var(--orange-yellow-crayola);
+  font-family: 'Consolas', monospace;
+  letter-spacing: 0.8px;
+  transition: color 0.3s ease;
 }
 
 .project-tags {
@@ -63,6 +76,12 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  font-family: 'Consolas', monospace;
+  letter-spacing: 0.5px;
+}
+
+.project-tag:hover {
+  background: var(--light-gray-70);
 }
 
 .project-tag ion-icon {
@@ -70,34 +89,50 @@
   margin-top: 1px;
 }
 
-.project-tag:hover {
-  background: var(--light-gray-70);
-}
-
 .project-description {
   color: var(--light-gray);
   font-size: 0.9rem;
   line-height: 1.5;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
+  font-family: 'Consolas', monospace;
+  letter-spacing: 0.2px;
+}
+
+.project-meta {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-radius: 6px;
 }
 
 .project-date {
-  color: var(--light-gray-70);
-  font-size: 0.8rem;
-  padding: 3px 8px;
-  border-radius: 4px;
-  background: var(--onyx);
   display: inline-block;
+  background: var(--eerie-black-1);
+  color: var(--light-gray);
+  padding: 6px 12px;
+  border-radius: 12px;
+  margin-top: 8px;
+  box-shadow: var(--shadow-1);
+  border: 1px solid var(--border-color);
+  font-size: 0.8rem;
+  font-family: 'Consolas', monospace;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .project-date {
+  color: var(--orange-yellow-crayola);
+  border-color: var(--orange-yellow-crayola);
 }
 
 .project-links {
-  margin-top: 12px;
   display: flex;
   gap: 12px;
-  /* Position the links at the bottom right */
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
 }
 
 .project-link {
@@ -110,7 +145,6 @@
   color: var(--orange-yellow-crayola);
 }
 
-/* Make it responsive */
 @media (max-width: 768px) {
   .portfolio-grid {
     grid-template-columns: 1fr;
@@ -123,21 +157,29 @@
   align-items: center;
   justify-content: center;
   height: 300px;
-  background: #e0e0e0; /* Light grey background */
+  background: var(--eerie-black-2);
   border-radius: 8px;
 }
 
 .development-preview ion-icon {
   font-size: 80px;
-  color: #333333; /* Dark grey/black for the icon */
+  color: var(--orange-yellow-crayola);
   opacity: 0.9;
 }
 
 .development-text {
   margin-top: 20px;
   font-size: 1.2rem;
-  color: #333333; /* Dark grey/black for the text */
+  color: var(--light-gray);
   opacity: 0.9;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-family: 'Consolas', monospace;
+}
+
+.development-badge {
+  color: var(--light-gray);
+  font-size: 0.75rem;
+  margin-left: 8px;
+  opacity: 0.8;
 }
